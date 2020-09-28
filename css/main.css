@@ -1,3 +1,99 @@
-body {
+body#main {
   background-color: #ffffff;
+  /*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+  /* Smartphones (portrait and landscape) ----------- */
+  /* Smartphones (landscape) ----------- */
+  /* Smartphones (portrait) ----------- */
+  /* iPads (portrait and landscape) ----------- */
+  /* iPads (landscape) ----------- */
+  /* iPads (portrait) ----------- */
+  /* Desktops and laptops ----------- */
+  /* Large screens ----------- */
+}
+
+body#main .title-center {
+  width: 100%;
+  text-align: center;
+}
+
+body#main .row {
+  margin-bottom: 2rem;
+}
+
+body#main .card {
+  height: 100%;
+  border: none;
+}
+
+body#main nav {
+  background-color: #fff;
+}
+
+body#main nav button.navbar-toggler {
+  border: none;
+}
+
+body#main .profil-picture {
+  display: inline-block;
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+body#main .profil-picture img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body#main {
+    /* Styles */
+  }
+}
+
+@media only screen and (min-width: 321px) {
+  body#main {
+    /* Styles */
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body#main {
+    /* Styles */
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body#main {
+    /* Styles */
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  body#main {
+    /* Styles */
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  body#main {
+    /* Styles */
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  body#main {
+    /* Styles */
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  body#main {
+    /* Styles */
+  }
 }
