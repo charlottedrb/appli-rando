@@ -1,0 +1,19 @@
+{
+    "services": {
+        "cloudantNoSQLDB": {
+            "credentials": {
+            "apikey": "YOUR_API_KEY_HERE",
+                "host": "YOUR_USERNAME_HERE.cloudant.com",
+                "iam_apikey_description": "Auto generated apikey during resource-key operation for Instance - crn:v1:bluemix:public:cloudantnosqldb:us-south:a/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx::",
+                "iam_apikey_name": "auto-generated-apikey-xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+                "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+                "password": "YOUR_PASSWORD_HERE",
+                "port": 443,
+                "url": "https://YOUR_USERNAME_HERE:YOUR_PASSWORD_HERE@YOUR_HOST_HERE.cloudant.com",
+                "username": "YOUR_USERNAME_HERE"
+            },
+            "label": "cloudantNoSQLDB"
+        }
+    }
+}
