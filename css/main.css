@@ -20,8 +20,20 @@ body#main nav button.navbar-toggler {
   border: none;
 }
 
+body#main .accueil-image {
+  display: inline-block;
+  position: relative;
+  height: 10rem;
+  overflow: hidden;
+}
+
+body#main .accueil-image img {
+  width: 100%;
+}
+
 body#main .title-center {
   width: 100%;
+  padding-top: 2rem;
   text-align: center;
 }
 
@@ -29,7 +41,7 @@ body#main .row {
   margin-bottom: 2rem;
 }
 
-body#main .card-columns:nth-of-type(2n) {
+body#main .card-columns-2 {
   -webkit-column-count: 2;
           column-count: 2;
 }

@@ -1,7 +1,4 @@
 body#main {
-    
-    
-
     &:not(.card){
         background-color: #fff;
     }
@@ -15,8 +12,22 @@ body#main {
         }
     }
 
+    .accueil{
+        &-image{
+            display: inline-block;
+            position: relative;
+            height: 10rem;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
     .title-center{
         width: 100%;
+        padding-top: 2rem;
         text-align: center;
     }
 
@@ -24,10 +35,8 @@ body#main {
         margin-bottom: 2rem;
     }
 
-    .card-columns{
-        &:nth-of-type(2n){
-            column-count: 2;
-        }
+    .card-columns-2{
+        column-count: 2;
     }
 
     .card{
@@ -109,4 +118,5 @@ body#main {
     /* Styles */
     }
 }
+
 
