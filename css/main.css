@@ -1,16 +1,23 @@
 body#main {
-  background-color: #ffffff;
   /*
- * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
- */
-  /* Smartphones (portrait and landscape) ----------- */
-  /* Smartphones (landscape) ----------- */
-  /* Smartphones (portrait) ----------- */
+    * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+    */
   /* iPads (portrait and landscape) ----------- */
-  /* iPads (landscape) ----------- */
-  /* iPads (portrait) ----------- */
   /* Desktops and laptops ----------- */
   /* Large screens ----------- */
+}
+
+body#main:not(.card) {
+  background-color: #fff;
+}
+
+body#main nav {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+body#main nav button.navbar-toggler {
+  border: none;
 }
 
 body#main .title-center {
@@ -22,20 +29,41 @@ body#main .row {
   margin-bottom: 2rem;
 }
 
+body#main .card-columns:nth-of-type(2n) {
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
 body#main .card {
+  display: block;
   height: 100%;
   border: none;
+  border-radius: 5px;
+  background: #5142e4;
+  background: linear-gradient(120deg, #5142e4 0%, #1da5ec 43%, rgba(45, 200, 207, 0.997619) 71%, #2aeb67 100%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-body#main nav {
-  background-color: #fff;
+body#main .card-title {
+  color: white;
 }
 
-body#main nav button.navbar-toggler {
-  border: none;
+body#main .card-text {
+  color: white;
+}
+
+body#main .card-text-big {
+  font-size: 2rem;
 }
 
 body#main .profil-picture {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+body#main .profil-picture-img {
   display: inline-block;
   position: relative;
   width: 10rem;
@@ -44,51 +72,23 @@ body#main .profil-picture {
   border-radius: 50%;
 }
 
-body#main .profil-picture img {
+body#main .profil-picture-img img {
   width: auto;
   height: 100%;
   margin-left: -50px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  body#main {
-    /* Styles */
+@media only screen and (min-device-width: 577px) {
+  body#main .card-columns:nth-of-type(n) {
+    -webkit-column-count: 1;
+            column-count: 1;
   }
-}
-
-@media only screen and (min-width: 321px) {
-  body#main {
-    /* Styles */
+  body#main .card-columns:nth-of-type(2n) {
+    -webkit-column-count: 2;
+            column-count: 2;
   }
-}
-
-@media only screen and (max-width: 320px) {
-  body#main {
-    /* Styles */
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  body#main {
-    /* Styles */
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  body#main {
-    /* Styles */
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  body#main {
-    /* Styles */
-  }
-}
-
-@media only screen and (min-width: 1224px) {
-  body#main {
-    /* Styles */
+  body#main .card {
+    display: inline-block;
   }
 }
 

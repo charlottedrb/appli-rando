@@ -1,102 +1,112 @@
 body#main {
-    background-color: #ffffff;
+    
+    
 
-    .title-center{
-        width: 100%;
-        text-align: center;
-    }
-
-    .row {
-        margin-bottom: 2rem;
-    }
-
-    .card-columns {
-      }
-
-    .card{
-        height: 100%;
-        border: none;
+    &:not(.card){
+        background-color: #fff;
     }
 
     nav{
-        background-color: #fff;
+        background-color: #f1f1f1;
+        width: 100%;
 
         button.navbar-toggler{
             border: none;
         }
     }
 
-    .profil{
-        &-picture{
-            display: inline-block;
-            position: relative;
-            width: 10rem;
-            height: 10rem;
-            overflow: hidden;
-            border-radius: 50%;
-            img {
-                width: auto;
-                height: 100%;
-                margin-left: -50px;
+    .title-center{
+        width: 100%;
+        text-align: center;
+    }
+
+    .row{
+        margin-bottom: 2rem;
+    }
+
+    .card-columns{
+        &:nth-of-type(2n){
+            column-count: 2;
+        }
+    }
+
+    .card{
+        display: block;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+        background: rgb(81,66,228);
+        background: linear-gradient(120deg, rgba(81,66,228,1) 0%, rgba(29,165,236,1) 43%, rgba(45,200,207,0.9976191160057774) 71%, rgba(42,235,103,1) 100%);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+        
+
+        &-title{
+            color: white;
+        }
+
+        &-text{
+            color: white;
+
+            &-big{
+                font-size: 2rem;
             }
         }
     }
 
+    .profil{
+        &-picture{
+            margin-top: 2rem;
+            margin-bottom: 0;
+
+            &-img{
+                display: inline-block;
+                position: relative;
+                width: 10rem;
+                height: 10rem;
+                overflow: hidden;
+                border-radius: 50%;
+                img {
+                    width: auto;
+                    height: 100%;
+                    margin-left: -50px;
+                }
+            }
+        }
+        
+    }
+
     /*
- * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
- */
+    * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+    */
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-}
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen 
+    and (min-device-width : 577px)  {
+        .card-columns{
+            &:nth-of-type(n){
+                column-count: 1;
+            }
+            &:nth-of-type(2n){
+                column-count: 2;
+            }
+        }
+        .card{
+            display: inline-block;
+        }
+    }
 
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-/* Styles */
-}
+    /* Desktops and laptops ----------- */
+    @media only screen 
+    and (min-width : 1224px) {
+ 
+    }
 
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
+    /* Large screens ----------- */
+    @media only screen 
+    and (min-width : 1824px) {
+    /* Styles */
+    }
 }
 
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-/* Styles */
-}
-}
