@@ -51,4 +51,4 @@
 				<br>
 				<input type="submit" value="Créer">
 			</form>
-		</section>
+</section>
