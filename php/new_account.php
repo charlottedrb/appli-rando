@@ -37,7 +37,7 @@
 		if(mysqli_num_rows(mysqli_query($conn, 'SELECT `id` FROM `connexion` WHERE `identifiant` LIKE "'.$identifiant.'"'))==0)
 		{
 			$results = mysqli_query($conn,"INSERT INTO connexion VALUES (NULL,'$identifiant','$mdp','$email');");
-			header("Location: ../index.php");
+			header("Location: ../index.html");
 		}else
 		{
 			$errors[] = "identifiant_pris";
